@@ -722,9 +722,12 @@ padding-top: 4rem;
         display: none;
     }
     
-
     .hero{
         flex-direction: column-reverse;
+    }
+
+    .herobtn button{
+        padding:0.5rem 1.5rem
     }
 
     .textside{
