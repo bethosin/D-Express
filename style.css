@@ -713,4 +713,186 @@ padding-top: 4rem;
 
 }
 
+@media(max-width: 425px){
+    nav{
+        display: none;
+    }
+
+    .btn{
+        display: none;
+    }
+    
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .textside{
+        width: 100%;
+    }
+
+    .imageside{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .heroinput input{
+        width: 70%;
+    }
+
+    .headerhero{
+        padding-bottom: 2rem;
+    }
+
+    .affiliate{
+        width:50% ;
+        margin: auto;
+    }
+
+    .affiliate img{
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .medicine{
+        flex-direction: column;
+    }
+
+    .medicinetext{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .medicineimage{
+        width: 100%;
+    }
+
+    .medicinetext h4{
+        width: 60%;
+    }
+
+    .medicinetext li{
+        font-size: 17px;
+    }
+
+    .doorstep{
+        flex-direction: column-reverse;
+    }
+
+    .doorsteptext{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .doorstepimg{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .doorsteptext h4{
+        width: 60%;
+    }
+
+    .doorsteptext li{
+        font-size: 17px;
+    }
+
+    .profile{
+        flex-direction: column ;
+    }
+
+    .profiletext{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .profileimg{
+        width: 100%;
+    }
+
+    .profiletext h4{
+        width: 70%;
+    }
+
+    .profiletext li{
+        font-size: 17px;
+    }
+
+    .client{
+        flex-direction: column;
+    }
+
+    .clientimg{
+        width: 100%;
+    }
+
+    .clienttext{
+        margin: auto;
+        width: 80%;
+    }
+
+    .clienttext p{
+        font-size: 18px;
+    }
+
+    .clienttext h5{
+        font-size: 18px;
+    }
+
+    footer{
+        margin-top: 2rem;
+    }
+    .newsletter{
+        flex-direction: column;
+    }
+
+    .signup{
+        width: 100%;
+    }
+
+    .email{
+        width: 100%;
+    }
+
+    .footlink{
+        flex-direction: column;
+    }
+
+    .footleft{
+        width: 100%;
+    }
+
+    .footright{
+        width: 100%;
+        display: block;
+    }
+
+    .signup h3{
+        font-size: 24px;
+    }
+
+    .signup p{
+        font-size: 18px;
+    }
+
+    .email label{
+        font-size: 18px;
+    }
+
+    .footleft p{
+        font-size: 18px;
+    }
+
+    .quicklinks h5{
+        font-size: 18px;
+    }
+
+    .quicklinks p{
+        font-size: 18px;
+    }
+}
+
+
+
 
