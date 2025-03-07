@@ -631,10 +631,10 @@ padding-top: 4rem;
 
     .nav-links {
         position: absolute;
-        top: 60px;
+        top: 3px;
         right: 0;
-        height: 100vh;
-        width: 100%;
+        height: 70vh;
+        width: 50%;
         background-color: #043CAA;
         flex-direction: column;
         justify-content: center;
@@ -783,7 +783,7 @@ padding-top: 4rem;
 @media(max-width: 425px){
 
     .nav-links {
-        top: 50px; /* Adjust top position for smaller screens */
+        top: 3px; /* Adjust top position for smaller screens */
     }
 
     .nav-links li {
@@ -980,7 +980,7 @@ padding-top: 4rem;
     }
 
     .nav-links {
-        top: 45px; /* Further adjust top position */
+        top: 3px; /* Further adjust top position */
     }
 
     .nav-links li {
