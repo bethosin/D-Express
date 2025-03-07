@@ -19,13 +19,20 @@
                     <img src="Images/Logo.png" alt="Logo">
                 </div>
                 <nav>
-                    <li><a href="/index.html">Refill Prescription</a></li>
-                    <li><a href="/medicine.html">Buy Medicine</a></li>
-                    <li><a href="/contact.html">Contact a Pharmacist</a></li>
+                    <div class="hamburger" id="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="/index.html" class="active">Refill Prescription</a></li>
+                        <li><a href="/medicine.html">Buy Medicine</a></li>
+                        <li><a href="/contact.html">Contact a Pharmacist</a></li>
+                    </ul>
+                    <div class="btn">
+                        <button>Login</button>
+                    </div>
                 </nav>
-                <div class="btn">
-                    <button>Login </button>
-                </div>
             </header>
             <div class="hero">
                     <div class="textside">
@@ -186,5 +193,7 @@
               </div>
         </footer>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

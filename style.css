@@ -23,42 +23,73 @@ header{
     align-items: center;
 }
 
-nav{
+nav {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
 }
 
-nav li{
-    color: white;
-    font-family: Lato;
+.nav-links {
+    display: flex;
+    gap: 5rem;
+    list-style-type: none;
+  
+}
+
+.nav-links li {
     font-size: 16px;
     font-weight: 500;
     line-height: 21.86px;
-    list-style-type: none;
+    font-family: Lato;
+    
 }
 
-a{
+.nav-links a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
+   
 }
 
-.btn button{
+.nav-links a.active {
+    color: #1BC768; /* Highlight color for active link */
+}
+
+.btn button {
     background: #1BC768;
-    font-family: Lato;
-font-size: 16px;
-font-weight: 500;
-line-height: 21.86px;
-border: none;
-border-radius: 50px;
-padding: 0.5rem 1rem;
-color: white;
-cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 4rem;
 }
 
-.btn button:hover{
+.btn button:hover {
     background-color: white;
     color: #1BC768;
 }
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
 
 .hero{
     display: flex;
@@ -593,6 +624,35 @@ padding-top: 4rem;
 }
 
 @media(max-width: 768px){
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #043CAA;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .btn {
+        display: none; /* Hide the login button on mobile for simplicity */
+    }
+
 .textside h2{
     font-size: 38px;
     line-height: 45.57px;
@@ -718,14 +778,27 @@ padding-top: 4rem;
 
 }
 
+
+
 @media(max-width: 425px){
-    nav{
-        display: none;
+
+    .nav-links {
+        top: 50px; /* Adjust top position for smaller screens */
     }
 
-    .btn{
-        display: none;
+    .nav-links li {
+        font-size: 14px; /* Smaller font size for smaller screens */
     }
+
+    .hamburger .line {
+        width: 20px; /* Smaller hamburger icon */
+        height: 2px;
+    }
+
+    nav{
+        padding: 1rem;
+    }
+
     
     .hero{
         flex-direction: column-reverse;
@@ -901,6 +974,23 @@ padding-top: 4rem;
     }
 }
 
+@media(max-width: 375px){
+    nav {
+        padding: 0.8rem;
+    }
+
+    .nav-links {
+        top: 45px; /* Further adjust top position */
+    }
+
+    .nav-links li {
+        font-size: 13px; /* Even smaller font size */
+    }
+
+    .hamburger .line {
+        width: 18px; /* Smaller hamburger icon */
+    }
+}
 
 
 
